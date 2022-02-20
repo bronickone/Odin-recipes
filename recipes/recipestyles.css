@@ -1,14 +1,6 @@
 body{
     background-image: url("../images/background.jpg");
 }
-h1{
-    font-family:'Times New Roman', Times, serif;
-    font-size: 60px;
-    font-weight: 900;
-    background-color: hsla(271, 85%, 80%, 0.3);
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
 img{
     height: auto;
     width: 700px;
@@ -17,26 +9,30 @@ img{
     margin-right: auto;
     border-radius: 15px;
 }
-h2{
-    font-family:'Times New Roman', Times, serif;
+h1{
+    font-size: 60px;
+    font-weight: 900;  
+}
+
+h2{   
     font-size: 40px;
     font-weight: 700;
+}
+h1,h2{
+    font-family:'Times New Roman', Times, serif;
     background-color: hsla(271, 85%, 80%, 0.3);
     color: rgb(255, 255, 255);
     text-align: center;
 }
 p{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
-    color:whitesmoke;
     margin-left: 40px;
 }
-ul,ol{
-   
+ul,ol,p{  
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
     color:whitesmoke;
 }
+
 li{
     margin-left: 25px;
     background-color: hsla(17, 92%, 46%, 0.3);
@@ -58,15 +54,11 @@ button{
 button:hover{
     animation-name: buthover;
     animation-duration: 700ms;
-    animation-fill-mode: forwards;
-    
-   
+    animation-fill-mode: forwards;   
 }
-  
 
   @keyframes buthover {
-    100% {
-      
+    100% {    
     background-color:rgb(0, 0, 0);
     color: whitesmoke;
     /*font-size:130%;*/
@@ -74,15 +66,14 @@ button:hover{
     }
 }   
     
-.but1pos{
-    text-align: right;
-    position:fixed;
-    top:10px;
-    right:20px;
+.but1pos{ 
+    top:10px;  
 }
-.but2pos{
+.but2pos{   
+    top:50px; 
+}
+.but1pos,.but2pos{
     text-align: right;
     position:fixed;
-    top:50px;
     right:20px;
 }
