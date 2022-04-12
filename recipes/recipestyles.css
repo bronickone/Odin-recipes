@@ -1,14 +1,16 @@
 body{
+  
+
+    
     padding: 0;
     margin: 0;
     background-image: url("../images/background.jpg");
 }
 img{
     height: auto;
-    width: 700px;
+  
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+   
     border-radius: 15px;
 }
 h1{
@@ -20,6 +22,7 @@ h2{
     font-size: 35px;
 }
 h1,h2{
+   
     font-family:'Luckiest Guy', Times, serif;
     padding-top: 20px;
 
@@ -28,20 +31,33 @@ h1,h2{
     text-align: center;
 }
 p{  
+   
     font-family: "Indie Flower", serif;
     text-align: center;
     font-size: 30px;
     color:whitesmoke;
 }
-ul,ol{  
+h1,h2,p,ul,ol,img{
+    margin-left: auto;
+    margin-right: auto;
+    width: min(75ch, 50%);
+}
+ul,ol{
+    
+    padding-inline-start: 0;
+    
+    list-style-position:inside;
+   
     font-family: "Secular One", monospace;
     font-size: 25px;
     color:whitesmoke;
 }
 
-li{
-    margin-left: 25px;
+li{ 
+    padding-left: 1rem;
+    padding-right: 1rem;
     background-color: hsla(17, 92%, 46%, 0.3);
+    border-radius: 20px;
 }
 .border{
     border:4px rgb(173, 192, 214);      
@@ -58,6 +74,7 @@ button{
     border-radius: 5px;
 }
 button:hover{
+    cursor: pointer;
     animation-name: buthover;
     animation-duration: 700ms;
     animation-fill-mode: forwards;   
